@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.background{
+    background-color:rgb(48, 48, 48);
+
+}
+.background1{
+    background-color:rgb(82, 81, 81);
+    margin-top: -10px;
+    font-size: larger;
+
+
+}
+
+
+h1 {
+    text-align: center;
+    width: 70%;
+    height: 50px;
+    background-color:rgb(48, 48, 48);
+    color: white;
+    margin: auto;
+   
+    font-size: 40px;
+    margin-bottom: 2px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* -----------------------------one pic with animation------------------------- */
+
+header {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+      url("images/p.3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  .section h2 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+  }
+  
+  .section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+  }
+  
+  .section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+  
+  .section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+  }
+  
+  .btnone:hover {
+    background: #00b894;
+    color: white;
+  }
+  
+  .section .btntwo {
+    background: #00b894;
+    color: white;
+  }
+  
+  .btntwo:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+  }
+  
+  @keyframes changetext {
+    0% {
+      content: "Blood";
+    }
+    20% {
+      content: "Food";
+    }
+    35% {
+      content: "Money";
+    }
+    60% {
+      content: "Organs";
+    }
+    80% {
+      content: "cloths";
+    }
+    100% {
+      content: "Others";
+    }
+  }
+
+
+/* -------------------------- Donation Card---------------------- */
+
+.doctorCard{
+
+justify-content: center;
+margin-left: 8px;
+margin-bottom: 5px;
+}
+
+/* -------------------------- Footer ----------------------------- */
+
+.footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    .footer .row {
+        display:inline-block;
+        margin:0px 30px;
+        }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
+
